@@ -1,0 +1,21 @@
+extends layout
+
+block content
+
+  div
+    h2 login
+    form#contact_form(action='/' method='POST' )
+        label.required(for='name') Nome
+        br
+        input#name.input(name='name' type='text' value='' size='30')
+        br
+        span#name_validation.error_message
+
+        label.required Senha
+        br
+        input#email.input(name='password' type='text' value='' size='30')
+        br
+        span#email_validation.error_message
+        input(class="waves-effect waves-light btn-small", heigth='100%'  value="registrar", type="submit")
+
+            

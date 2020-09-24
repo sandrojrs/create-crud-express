@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  color: cornflowerblue;
+}
+input {
+  width: 100%;
+  background-color: blue;
+}
+/*
+
+a {
+  color: #00b7ff;
+}
+div {
+  padding: 10px;
+  border: solid;
+  border-radius: 30px;
+  border-color: cornflowerblue;
+  width: 500px;
+}
+*/
