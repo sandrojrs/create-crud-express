@@ -2,13 +2,18 @@ extends layout
 
 block content
   div(class='container')
-    h2 login
+    h2 
     form#contact_form(action='/' method='POST' )
       label.required(for='name') Nome
       br
       input#name.input(name='name' type='text' value='' size='30')
       br
       span#name_validation.error_message
+      label.required(for='email') Email
+      br
+      input#email.input(name='email' type='email' value='' size='30')
+      br
+      span#email_validation.error_message
 
       label.required Senha
       br
@@ -16,33 +21,6 @@ block content
       br
       span#email_validation.error_message
       input(class="waves-effect waves-light btn-small", heigth='100%'  value="registrar", type="submit")
-      div(id='calendar')
-  script.
-    document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-    locale: 'pt-br',
-    headerToolbar: {
-    center: 'prev,next',
-    left: 'title',
-    right: 'dayGridMonth,timeGridWeek,listMonth',
-    },
-    initialDate: new Date ,
-    navLinks: true, // can click day/week names to navigate views
-    businessHours: true, // display business hours
-    editable: false,
-    selectable: false,
-    events: [
-    {
-      id: 'a',
-      title: 'evento',
-      start: '2020-09-25'
-    }
-    ]
-    });
-    -
-    calendar.render();
-    });
 
 
 

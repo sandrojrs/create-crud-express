@@ -3,10 +3,26 @@ html
   head
     title='titulo 2'
     link(href='/js/lib_calendario/main.css', rel='stylesheet')
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")   
+    link(href='/css/index.css', rel='stylesheet')
+    link(rel="stylesheet", href="https://devexpress.github.io/bootstrap-themes/dist/purple/bootstrap.css") 
+    link(rel="stylesheet", href="https://devexpress.github.io/bootstrap-themes/dist/purple/bootstrap.min.css  ") 
     script(src='/js/lib_calendario/main.js')
     script(src='/js/lib_calendario/locales-all.js')
     script(src='/js/lib_calendario/locales/pt-br.js')  
     script(src="/js/calendar.js", type="javaScript")
   body
+  main.main
+  aside.sidebar
+    nav.nav
+      ul
+        li.active
+          a(href='#') Inicio
+        li
+          a(href='#') Produtos
+        li
+          a(href='#') Serviços
+        li
+          a(href='#') Duvidas
+  section.twitter
+    .container
     block content
